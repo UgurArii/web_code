@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<websites>
+    <site>
+        <name>Google</name>
+        <url>http://google.com</url>
+        <information>Google is a search engne</information>
+    </site>
+        <site>
+        <name>Reddit</name>
+        <url>http://reddit.com</url>
+        <information>Reddit is a social news website</information>
+    </site>
+</websites>

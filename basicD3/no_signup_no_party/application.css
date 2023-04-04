@@ -1,0 +1,21 @@
+nav > ul > li{
+display: inline-block;
+vertical-align: top;
+line-height: 3em;
+width: 100px;
+z-index: 2;
+position: relative;
+border-left: 1px solid #313131;
+box-shadow: 1px 0 1px rgba(255,255,255,0.1) inset, -1px 0 1px
+rgba(255,255,255,0.1) inset;
+}
+nav > ul > li:nth-last-child(2){
+border-right: 1px solid #313131;
+}
+nav > ul > li > ul{
+position: absolute;
+left: -1px;
+top: 3em;
+clip: rect(0,0,0,0);
+opacity: 0;
+}

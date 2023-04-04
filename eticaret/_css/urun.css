@@ -1,0 +1,231 @@
+/* 
+    Document   : urun
+    Created on : 19.Eyl.2012, 17:31:10
+    Author     : RC
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.urunBox {
+    
+    width: 158px;
+    height: 300px;
+    font-size: 10px;
+    float:left;
+    border : 1px solid #ccc;
+    margin: 10px 6px;
+    padding: 10px;
+
+}
+
+
+.urunBox .urunBaslik {
+ font-size: 10px;
+ color: #666;
+ display: block;
+ margin-top: 5px;
+}
+
+.urunBox .urunFiyat {
+ font-size: 13px;
+ color: #ffa23e;
+ font-weight: bold;
+ display: block;
+ margin-top: 5px;
+}
+
+.urunMarkaBox {
+    height: 60px;
+    width: 149px;
+    float: left;
+    border: 1px solid #ccc;
+    line-height: 60px;
+    text-align: center;
+      margin: 5px 20px;
+}
+
+#urunMarkaWrapper{
+    margin: 10px 20px;
+}
+ 
+    
+#urunMarkaHarf{
+    border :1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin:10px 20px;
+}
+
+         
+         #urunMarkaHarf a:link, #urunMarkaHarf a:visited{
+                 color:#666;
+         font-weight: bold;
+         font-size: 1em;
+         padding:5px 2px;
+         text-decoration: none;
+         }
+         
+         #urunMarkaHarf a:hover{
+               color:#666;
+             text-decoration: underline;
+         }
+
+         #urunBaslik{
+             float:left;
+             font-size: 18px;
+             height:auto;
+             padding: 0 0 0 20px;
+             width: 768px;
+             margin: 10px 0;
+         }
+
+         #urunDetayResim{
+             float:left;
+             padding: 0;
+             width: 347px;
+             height: 347px;
+             border: 1px solid #E1E1E1;
+             border-radius: 3px;
+             margin:0 15px;
+         }
+ 
+         #urunDetayKategori{
+             width: 1500px;
+             background: url(../_img/urun-detay/urunDetayKategoriBG.png) repeat;
+             border-radius: 3px;
+             border: 1px solid #ccc;
+             padding: 5px 20px;
+             color:#333;
+             margin: 10px 0;
+             font-size:.9em;
+             color: #ff6600;
+             line-height: 30px;    
+                 
+         }
+         
+         #urunBilgi{
+             width: 430px;
+             float:left;
+             min-height: 347px;
+         }
+         
+         #urunDetayNav{
+             width:170px;
+             float:left;
+             min-height: 347px;
+         }
+
+         #urunDetayFiyat label  {
+             display: inline-block;
+             font-size: 14px;
+             width: 125px;
+            font-weight: normal;
+            color:#000;
+         }
+         
+         #urunDetayFiyat ul {
+             margin: 0;
+             padding: 0;
+         }
+         
+         #urunDetayFiyat li {
+             margin: 0;
+             padding: 0;
+             list-style: none;
+             font-size: 14px;
+             padding-bottom: 5px;
+             border-bottom: 1px solid #E8E8E8;
+             margin-bottom: 5px;
+         }
+
+         #urunDetayFiyat li img {
+             vertical-align: middle;
+         }
+
+         #urunDetayNav ul {
+             padding: 0;
+             margin: 0;
+         }
+         
+         #urunDetayNav ul li {
+             list-style: none outside none;
+             margin: 0;
+             padding: 0;
+             background: url("../img/layout/GlobalButtons.png") no-repeat scroll -8px -202px transparent;
+             border-bottom: 1px dotted #DFDFDF;
+             margin: 0 2px 0 0;
+                    padding: 1px;
+         }
+         
+         #urunDetayNav ul li a:link, #urunDetayNav ul li a:visited {
+             display: block;
+             height: 100%;
+             padding: 0 0 2px 12px;
+             color:#333;
+             text-align: left;
+             font: 11px Arial, Helvetica,sans-serif;
+             border: 0 none;
+             outline: 0 none;
+             clear: both;
+             text-decoration: none;
+         }
+         
+         #urunDetayNav ul li a:hover{
+             background-color: #fffbed;
+             color:#ffa23e;
+         }
+         
+         .urunDetayNavPuan{
+             color:#333;
+             text-align: left;
+             font: 11px Arial, Helvetica,sans-serif;
+             font-weight: bold;
+             padding: 0 0 2px 12px;
+         }
+
+         .urunDetayNavPuanMiktar{
+                color:#ffa23e;
+                font-size: 13px;
+                 font-weight: bold;
+             padding: 0 0 2px 12px;
+         }
+         
+         #urunDetayAciklama{
+             clear:both;
+             width: 1000px;
+             
+         }
+         
+         #buUrunleBirlikteTercihEdilenUrunler{
+             background: url("../_img/layout/content/contentBG.png")  no-repeat scroll 0 0 white;
+             min-height: 150px;
+             padding: 10px;
+             margin: 10px 0;
+         }
+         #kategorideEnCokSatanlar{
+              background: url("../_img/layout/content/contentBG.png")  no-repeat scroll 0 0 white;
+             min-height: 150px;
+             padding: 10px;
+             margin: 10px 0;
+         }
+         
+         .colorV2{
+             color:#FFA23E;             
+         }
+         .strong{
+             font-weight: bold;
+         }
+         .mt10{
+             margin-top: 10px !important;
+         }
+         .mb10{
+             margin-bottom: 10px;
+         }
+         
+         .fleft{
+             float:left;
+         }
+         .font13{
+             font-size: 13px !important;
+         }
+        

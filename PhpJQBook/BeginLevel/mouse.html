@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Mouse Movements</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        div
+        {
+            border: 1px solid black;
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            font-family: vardane, arial;
+            font-size: 14px;
+        }
+        div#tip
+        {
+            position: absolute;
+            width: 100px;
+            height: auto;
+        }
+    </style>
+    <script src="jquery-1.11.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+          $('.hoverMe').hover(
+                function()
+        {
+            $('#tip').fadeIn('slow'); 
+        },
+        function()
+        {
+            $('#tip').fadeOut('fast');
+        });  
+     $('.hoverMe').mousemove(function(e)
+        {
+        var topPosition = e.pageY+5;
+        var leftPosition = e.pageX+5;
+        $('#tip').css(
+        {
+        'top' : topPosition+ 'px',
+        'left' : leftPosition +'px'
+        });
+});
+});
+    </script>
+</head>
+<body>
+<div id="tip" style="display:none;">Yay! I am a tooltip</div>
+<div class="hoverMe">Hover me for a tooltip.</div>
+<div>This div will not display a tooltip</div>
+<div class="hoverMe">Hover me for a tooltip.</div>
+</body>
+</html>

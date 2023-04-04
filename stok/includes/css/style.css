@@ -1,0 +1,48 @@
+
+h1
+{
+    margin: 10px auto;
+    color:#212121;
+    font-size: 1em;
+    width: 450px;
+}
+#girisResim{
+     margin: 10px auto;
+    margin-top: 50px;
+    width: 450px;
+    text-align: center;
+}
+body
+{
+   // background: url("../includes/img/bg.jpg") repeat-x #ffc84d;
+    background-color: #f2c84d;
+   
+}
+
+fieldset{
+    width:450px;
+    height: 300px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+label
+{
+    display: block;
+    color: #333;
+    margin: 3px 0;
+    
+}
+
+input{
+    padding: 5px;
+    width: 200px;
+}
+
+#girisBilgi p{
+    font-size: 0.8em;
+    color:#f00;
+}
+
+
+

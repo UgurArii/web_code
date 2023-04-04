@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title>Detecting AJAX Requests</title>
+    <style type="text/css">
+
+    </style>
+    <script src="jquery-1.11.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function ()
+{
+$('input:button:first').click(function(aaa)
+{
+$.getScript('new.js', function()
+{
+    alert('Script loaded');
+addEvents();
+});
+});
+});
+
+    </script>
+    <script type="text/javascript">
+        function addEvents()
+{
+$('.bold').click(function()
+{
+$('#container').css('font-weight', 'bold');
+});
+$('.color').click(function()
+{
+$('#container').css('color', 'red');
+});
+$('.change').click(function()
+{
+$('#container').html('<em>New html inserted</em>');
+});
+}
+    </script>
+</head>
+<body>
+        <p id="container">
+       This text will be replaced with new text.
+       </p>
+       <input type="button" class="loader" value="Load Script"/>
+       <input type="button" class="bold" value="Bold"/>
+       <input type="button" class="color" value="Change color"/>
+       <input type="button" class="change" value="Change text"/>
+</body>
+</html>

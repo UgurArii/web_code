@@ -1,0 +1,42 @@
+aside#kategori ul {
+    
+    margin:0;
+    padding:0;
+    
+}
+
+aside#kategori ul li {
+    
+    list-style:none;
+    width:193px;
+   background-image: url(../_img/layout/kategoriMenuBG.png);
+    height: 30px;
+    margin-left:7px;
+    padding-bottom:2px;
+    border-bottom:1px solid #ccc;
+}
+
+aside#kategori ul li a:link,aside#kategori ul li a:visited{
+    
+    color:#2693FF;
+    font-size:12px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left:10px;
+    line-height: 30px;
+        
+    
+    
+}
+aside#kategori ul li a:hover{
+    
+    color:#e78f08;
+    
+}
+
+aside#kategori .departmanKategori ul li {
+   border:none;
+   font-size:10px;
+   color:#e78f08;
+    
+}

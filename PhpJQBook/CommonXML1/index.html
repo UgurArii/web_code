@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+   <head>
+    <title>Using XPath</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        ul{
+            border:1px solid black;
+            padding: 5px;
+            list-style: none;
+            width: 550px;
+        }
+        li{
+            padding: 5px;
+        }
+    </style>
+    <script src="jquery-1.11.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+           $('input:button').click(function()
+           {
+               $.get(
+               'process.php',
+       {
+           action:$(this).attr('id')
+       },
+       function(data)
+       {
+           $('#result').html(data);
+       }
+                )
+           })  
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="Show all books" id="all"/>
+<input type="button" value="Show stories with quotes"
+id="total"/>
+<input type="button" value="Get last book" id="last"/>
+<input type="button" value="Books with year <1900" id="year"/>
+<div id="result"></div> 
+</body>
+</html>

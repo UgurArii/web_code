@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title>JQuery.get()</title>
+    <style type="text/css">
+        ul
+        {
+            border:1px solid green;
+            list-style: none;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            width: 300px;
+        }
+        li
+        {
+            padding: 10px 5px;
+            border-bottom: 1px solid green;
+        }
+    </style>
+    <script src="jquery-1.11.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+       $(document).ready(function ()
+       {
+          $('#choice').change(function ()
+          {
+            if($(this).val() != '')
+            {
+                $.get(
+                    'data.php',
+            {what: $(this).val()},
+            function(data)
+            {
+                $('#result').html(data);
+            }
+                    )
+            }
+          });
+       });
+    </script>
+    
+</head>
+<body>
+    <form>
+        <p>
+            Show list of:
+            <select id="choice">
+                <option value="">Select</option>
+                <option value="good">Good Guys</option>
+                <option value="bad">Bad Guys</option>
+            </select>
+        </p>
+        <p id="result"></p>
+    </form>
+</body>
+</html>

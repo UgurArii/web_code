@@ -1,0 +1,47 @@
+
+body
+{
+    position: relative;  
+    margin: 0;
+    padding: 0;
+}
+
+#yonetimToolbar{
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    display: block;
+}
+
+#yonetimToolbar ul{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#yonetimToolbar ul li{
+    list-style: none;
+    float: left;
+    line-height: 40px;
+    padding: 0 3px;
+    
+}
+
+#yonetimToolbar ul li a:link, #yonetimToolbar ul li a:visited{
+    color:#fff;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+#yonetimToolbar ul li a:hover{
+    text-decoration: underline;
+}
+
+#yonetimToolbar ul li img{
+    padding-right: 3px;
+    padding-bottom: 6px;
+    vertical-align: middle;
+}
+
+
+

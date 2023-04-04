@@ -1,0 +1,21 @@
+body,html{
+height: 100%;
+}
+#body{
+height: 100%;
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+.-webkit- #body{
+perspective: 500px;
+transform-style: preserve-3d;
+}
+
+#container{
+background-image: url('img/logo-1.png');
+text-align: center;
+padding-bottom: 300px;
+/* to be removed when we'll have content */
+min-height: 1000px;
+}

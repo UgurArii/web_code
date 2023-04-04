@@ -1,0 +1,141 @@
+
+label{
+    display:block;
+    color:#666666;
+    font-size: 1em;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+form p{
+    color:#999;
+    font-size: 0.9em;
+}
+
+#uyeOlForm fieldset{
+    margin: 10px;
+    border: 1px solid #cccccc;
+    width: 260px;
+    float:left;
+}
+
+#uyeOlForm legend{
+    padding: 0 10px;
+    color: #3333;
+    font-size: 1em;
+}
+#uyeOlForm input[type="text"], #uyeOlForm input[type="password"], #uyeOlForm input[type="email"]{
+  
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 200px;
+    color:#666666;
+    font-size: 1em;
+    font-weight: bold;
+  
+    border: none;
+    padding-left: 35px;
+        border-radius: 2px;
+}
+#uyeOlForm input[type="text"]{
+    
+    background: url('../_img/uyelik/icon/username.png')center left 10px no-repeat,
+        url('../img/uyelik/InputBG.jpg') top left no-repeat;
+
+}
+
+ #uyeOlForm input[type="password"]{
+
+    background: url('../_img/uyelik/icon/password.png')center left 10px no-repeat,
+        url('../img/uyelik/InputBG.jpg') top left no-repeat;
+  
+}
+
+ #uyeOlForm input[type="email"]{
+       
+    background: url('../_img/uyelik/icon/email.png')center left 10px no-repeat,
+        url('../img/uyelik/InputBG.jpg') top left no-repeat;
+
+}
+
+
+
+#uyeOlForm input[type="text"]:focus{
+    color:#008ACC;
+    background: url('../_img/uyelik/icon/username.png')center left 10px no-repeat,
+        url('../img/uyelik/InputBG.jpg') top left 220px;
+}
+
+#uyeOlForm input[type="password"]:focus{
+        color:#008ACC;
+    background: url('../_img/uyelik/icon/password.png')center left 10px no-repeat,
+        url('../img/uyelik/InputBG.jpg') top left 220px;
+}
+
+#uyeOlForm input[type="email"]:focus{
+        color:#008ACC;
+    background: url('../_img/uyelik/icon/email.png')center left 10px no-repeat,
+        url('../img/uyelik/InputBG.jpg') top left 220px;
+}
+
+#uyeOlForm input[type="submit"]{
+      clear: both;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    
+    margin: 20px 0;
+    width: 220px;
+    background: url("../img/uyelik/uyeKayitBG.jpg");
+    border:none;
+    font-weight: bold;
+    color:#fff;
+    font-size: 1em;
+    margin-left:20px;
+}
+
+#uyeOlForm input[type="submit"]:hover{
+    background: url("../img/buton/submitButonHover.jpg") repeat-x;
+    background-position: top left 220px;
+}
+
+#uyeOlForm input[type="submit"] .submitDisabled{
+    color:#f00;
+    font-size: 11px;
+    padding-left:35px;
+ background: url('../_img/uyelik/icon/error.png')center left 10px no-repeat,
+        url('../img/uyelik/InputBG.jpg') top left;
+}
+
+
+
+.dropdown, .dropdownEposta, .sonuc, .sonucEposta{
+    margin:0;
+    padding: 0;
+    width: 220px;
+    
+}
+
+.sonuc, .sonucEposta{
+    width: 210px;
+    list-style: none;
+    margin:0;
+}
+
+.sonuc li, .sonucEposta{
+    color:#cc3333;
+        border:1px solid #ccc;
+        font-size:12px;
+        padding:10px 5px;
+        margin:5px 0;
+        display: block;
+           line-height: 24px;
+}
+
+:: -moz -placeholder{
+    font-weigt:normal;
+    font-family: "Lucida Sans Unicode",sans-serif;
+    font-size: 0.8em;
+}
+

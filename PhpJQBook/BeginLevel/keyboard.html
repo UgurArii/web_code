@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        div{
+            border: 1px solid black;
+            float:left;
+            height: 200px;
+            margin: 10px;
+            width: 220px;
+        }
+    </style>
+    <script src="jquery-1.11.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           var altPressed = false;
+           $(document).keydown(function (event)
+           {
+             if(event.which == 18)
+             altPressed = true;
+             if(altPressed)
+             {
+                 switch(event.which)
+                 {
+                     case 83:
+                         $('div:first').slideToggle('slow');
+                         return false;
+                         break;
+                         case 71:
+                        $('div:last').slideToggle('slow');
+                        return false;
+                        break;
+                        case 66:
+                        $('div').slideToggle('slow');
+                        return false;
+                        break;
+                 }
+             }
+           });
+           $(document).keyup(function (event){
+               if(event.which == 18)
+                   altPressed = false;
+           })
+        });
+    </script>
+    </head>
+<body>
+<div>You can toggle this div using Alt+S</div>
+<div>You can toggle this div using Alt+G </div>
+<p style="clear: both;">&nbsp;</p>
+<p>Press Alt+B to toggle both divs</p>
+</body>
+</html>

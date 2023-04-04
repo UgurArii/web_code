@@ -1,0 +1,172 @@
+body {
+    font-family: Verdana, Arial, Halvetica, sans-serif;
+}
+
+header {
+    border: 1px solid #F4F4F4;
+    border-radius: 3px 3px 3px 3px;
+}
+#headerSlogan{
+    font-size: 10px;
+    line-height: 18px;
+    padding: 10px 10px 0;
+}
+
+header img{
+vertical-align: middle;
+padding-right: 5px;
+}
+
+#headerUyePuan{
+font-size: 10px;
+line-height: 18px;
+padding: 10px 10px 0;
+}
+
+#headerTopNav{
+    font-size: 10px;
+    line-height: 18px;
+    padding: 10px 10px 0;
+    position: relative;
+}
+
+#headerTopNav ul{
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   right: 0;
+}
+
+#headerTopNav ul li{
+ display: inline;
+ line-height: 18px;
+ list-style: none outside none;
+}
+
+#headerTopNav ul li a:link, #headerTopNav ul li a:visited{
+ color:#333333;
+ padding: 0 10px;
+ text-decoration: none;
+}
+
+#headerLogo{
+    padding:0 10px 10px;
+}
+
+#headerSearchContainer{
+    padding: 0 10px;
+}
+
+
+
+#headerSearch {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+#headerSearchForm select{
+    border:medium none;
+    border-radius: 5px;
+    float:left;
+    padding: 6px 5px;
+}
+
+#headerSearchForm #SearchAramaKelime{
+border:medium none;
+color:#cccccc;
+float:left;
+height: 25px;
+line-height: 31px;
+width: 411px;
+}
+
+
+#headerSearchForm #SearchFormSubmit {
+     background: url("../img/layout/header/aramaButon.png") repeat scroll 0 0 transparent;
+    border: medium none;
+    border-radius: 3px 3px 3px 3px;
+    float: left;
+    height: 31px;
+    width: 39px;
+}
+
+
+#headerCartButton {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+nav#main {
+    height: 40px;
+    background: url("../img/layout/nav/navButonBG.png");
+       border-radius: 5px;
+}
+
+nav#main ul{
+    margin:0;
+    padding: 0;
+ 
+}
+
+nav#main ul li{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    float:left;
+    
+}
+
+nav#main ul li a:link, nav#main ul li a:visited{
+    line-height: 40px;
+    color:#666;
+    font-size: 0.9em;
+    font-family: verdana;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav#main ul li a:hover{
+    color:#F00;
+    text-decoration: underline;
+}
+#wrapper {
+ 
+    overflow: hidden;
+}
+
+aside {
+    background-color: #fff;
+}
+
+aside#kategori {
+    background-color: #fff;
+}
+
+aside#gundem {
+    background-color: #f00;
+
+}
+
+#content{
+   // background: url("../_img/layout/content/contentBG.png") no-repeat;
+    background-position: 0px 0px;
+    background-color: #FEFEFE;
+}
+
+#content h1{
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #E8E8E8;
+    border-top: 1px solid #E8E8E8;
+    height: 34px;
+    width: 800px;
+    margin: 10px;
+    color:#999;
+    font-size: 1em;
+    line-height: 34px;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: burlywood;
+    color: #fff;
+}
+

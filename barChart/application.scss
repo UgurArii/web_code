@@ -1,0 +1,99 @@
+@import "compass/reset";
+
+.this_bar_chart{
+    width: 600px;
+    height: 400px;
+}
+
+*[data-bar-chart]{
+display: -moz-box;
+display: -webkit-box;
+display: box;
+display: -moz-flex;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+/* temporary property only for this step */
+border: 1px solid black;
+*[data-bar]{
+-webkit-box-flex: 1;
+-moz-box-flex: 1;
+box-flex: 1;
+-moz-flex: 1;
+-webkit-flex: 1;
+-ms-flex: 1;
+flex: 1;
+/* temporary property only for this step */
+border: 1px solid black;
+}
+}
+
+@import "compass/css3/box-sizing";
+*[data-bar-chart]{
+padding-bottom: 30px;
+@include box-sizing(border-box);
+/* temporary property only for this step */
+border: 1px solid red;
+*[data-bar]{
+position: relative;
+/* temporary property only for this step */
+background: green;
+&:before{
+display: block;
+content: attr(data-label);
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+text-align: center;
+padding-top: 10px;
+}
+}
+}
+
+@for $i from 0 through 100{
+*[data-value-percentage='#{$i}']{ height: 0% + $i; }
+}
+
+@import url(http://fonts.googleapis.com/css?family=Chivo);
+@import "compass/css3/images";
+.value:after, *[data-bar]:before{
+font-family: 'Chivo', sans-serif;
+}
+.value{
+background-image: -ms-linear-gradient(bottom, transparent,
+rgba(0,0,0,0.3));
+@include background-image(linear-gradient(bottom, transparent,
+rgba(0,0,0,0.3)));
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+box-shadow: 1px 1px 0px rgb(255,255,255) inset;
+border: 1px solid rgba(0,0,0,0.5);
+@include box-sizing(border-box);
+}
+
+*[data-bar]{
+background-image: -ms-linear-gradient(top, rgb(99,99,99),
+rgb(99,99,99) 1px, transparent 1px, transparent);
+@include background-image(linear-gradient(top, rgb(99,99,99),
+rgb(99,99,99) 1px, transparent 1px, transparent));
+background-size: 100% 25%;
+background-repeat: repeat-y;
+}
+
+*[data-bar]{
+background-image: -ms-linear-gradient(top, rgb(150,150,150),
+rgb(150,150,150) 0.5%, transparent 0.5%, transparent 24.5%,
+rgb(150,150,150) 24.5%, rgb(150,150,150) 25%, transparent 25%,
+transparent 49.5%, rgb(150,150,150) 49.5%, rgb(150,150,150)
+50%, transparent 50%, transparent 74.5%, rgb(150,150,150) 74.5%,
+rgb(150,150,150) 75%, transparent 75%, transparent 99.5%,
+rgb(150,150,150) 99.5%, rgb(150,150,150) 100%);
+@include background-image(linear-gradient(top, rgb(150,150,150),
+rgb(150,150,150) 0.5%, transparent 0.5%, transparent 24.5%,
+rgb(150,150,150) 24.5%, rgb(150,150,150) 25%, transparent 25%,
+transparent 49.5%, rgb(150,150,150) 49.5%, rgb(150,150,150)
+50%, transparent 50%, transparent 74.5%, rgb(150,150,150) 74.5%,
+rgb(150,150,150) 75%, transparent 75%, transparent 99.5%,
+rgb(150,150,150) 99.5%, rgb(150,150,150) 100%));
+}

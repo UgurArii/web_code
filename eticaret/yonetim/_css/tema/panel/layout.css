@@ -1,0 +1,294 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    color: #333;
+    background: url("../../../../_img/bg/bgGold.jpg") repeat-x;
+    background-color:#F8F3D6;
+}
+
+header{
+    width: 1180px;
+    height: 81px;
+    margin:0 auto;
+    background: url("../../../../_img/layout/headerBG.jpg") repeat-x;
+    position: relative;
+    font-family: Trebuchet MS, sans-serif;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+   
+}
+
+header h1{
+    line-height: 81px;
+    color: #ffff;
+    font-size: 2.5em;
+    margin-left: 20px;
+    width: 300px;
+    float:left;
+    font-weight: normal;
+}
+
+header #kullaniciLogin{
+    width: 200px;
+    height: 81px;
+    position: absolute;
+    right:0;
+    color:#fff;
+    line-height: 81px ;
+     font-size:12px;
+     font-weight: hold;
+}
+header #kullaniciLogin a:link, header #kullaniciLogin a:visited{
+    color:#fff;
+    text-decoration: none; 
+}
+
+header #kullaniciLogin a:hover{
+    text-decoration:underline; 
+}
+header #kullaniciLogin img{
+ vertical-align: middle;
+padding-right: 5px;
+
+}
+
+nav{
+    width: 1180px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+nav table td h3 {
+    font-size:1em;
+    color:#f00;
+    margin:3px 0;
+    
+}
+
+nav table td img {
+    
+    vertical-align: middle;
+    padding-right: 5px;
+    
+}
+nav table td {
+    
+    font-size:0.8em;
+  padding-left:5px;
+    
+}
+
+nav table td a:hover{
+    text-decoration: none;
+    color:#f00;
+}
+
+section{
+    width: 1180px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: none;
+}
+
+section h1{
+    margin:0 10px 0 10px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #f00;
+    color:#f00;
+    width: 500px;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: normal;
+}
+
+section h3{
+    margin:0 10px 0 10px;
+    padding-top: 10px;
+
+    color:#0066CC;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: normal;
+}
+
+section table{
+    margin:10px 10px 0 10px;
+    padding-bottom: 10px;
+    
+}
+section table td{
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+section table p{
+    margin:5px 10px;
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+section table td a:link, section table td a:visited{
+          background-color: #ccc;
+            color: #f00;
+            margin:0 3px;
+            text-decoration: none;
+}
+
+section table td a:hover{
+           color:#fff;
+            background-color: #f00;
+}
+
+footer{
+    width: 1180px;
+    height: 81px;
+    margin: 0 auto;
+    background: url("../../../../_img/layout/headerBG.jpg");
+    position: relative;
+    font-family: Trebuchet MS, sans-serif;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+
+footer p{
+    line-height: 81px;
+    text-align: center;
+    color:#fff;
+}
+
+ label{
+            display:block;
+            font-size:1em;
+            font-family: verdana;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        fieldset{
+            width: 95%;
+            margin: 0 auto;
+            border-radius: 3px;
+            padding: 10px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        fieldset legend{
+            color:#f00;
+            font-weight: bold;
+            padding: 0 10px 15px 10px;
+            margin: 0 10px;
+            text-decoration: underline;
+            font-family: Trebuchet MS, sans-serif;
+        }
+        
+        input[type="submit"]{
+            margin: 15px 0 5px 0;
+            padding: 5px;
+            display: block;
+        }
+        
+           input[type="text"], input[type="password"]{
+            padding: 5px;
+            border:1px solid #f6a828;
+            border-radius: 3px;
+        }
+        
+        input[type="text"]:focus, input[type="password"]:focus{
+            background-color: #ccffcc;
+            color:#333;
+            border:1px solid chartreuse;
+            
+        }
+        
+        
+        form img{
+            display: block;
+            margin: 10px 0;
+        }
+        
+            table#dinamikListe {
+         width : 1140px;
+        }  
+      table#dinamikListe td{
+            font-family: verdana;
+            font-size: 9px;
+            padding: 5px;
+        } 
+        
+        table#dinamikListe th{
+            font-size: 12;
+            font-family: verdana;
+            background-color: #00cccc;
+            color:#fff;
+            padding:5px;
+        }
+        
+        table#dinamikListe img.UrunResim{
+            border: 1px solid #666;
+            border-radius: 3px;
+            padding: 3px;
+            background-color: #ccc;
+        }
+        
+        table#dinamikListe td.buton a:link, table td.buton a:visited{
+            background-color: #ccc;
+            color: #f00;
+            padding: 2px;
+            margin:0 3px;
+            text-decoration: none;
+        }
+        
+        table#dinamikListe td.buton a:hover{
+            color:#fff;
+            background-color: #f00;
+        }
+
+        .formHataAlanBos{
+            width: 750px;
+            padding: 10px;
+            background-color: #ffe45c;
+            color:#333;
+            font-size: 1em;
+            font-weight: bold;
+            margin:10px;
+            border: 1px solid #b81900;
+            border-radius: 3px;
+        }
+
+        select{
+            padding:5px;
+            font-size: 1em;
+        }
+
+        .yesilKutu{
+            border: 1px solid palegreen;
+            background-color: chartreuse;
+            padding: 3px;
+            margin: 10px 0;
+        }
+
+          tr.tekSatir{
+           background-color: #eeeeee;
+            color:#000;
+        }
+        
+         tr.ciftSatir{
+             background-color: #ffff;
+             color:#000;
+        }
+         tr.uzerindeyken{
+            background-color: #d4fde4;
+             color:#009fda;
+        }
+
+       table#dinamikListe tr td.alignLeft{
+            text-align: left;
+        }
